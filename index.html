@@ -63,22 +63,21 @@
   margin: auto;
   position: absolute;
   display: block;
-  transform-origin: -200% center;
+  transform-origin: -370% center;
   -webkit-animation-duration: 9s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-name: "rotate";
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 1;
 }
 
 #rocket img{
   width: 40px;
-  height: auto;
-  transform-origin: center bottom;
-  margin-top: 10%;
-
-
+  padding-top: -30px;
 }
-
+img {
+  vertical-align: left;
+}
+		
 .jumbotron {
     top: 0;
     position:fixed;
@@ -86,7 +85,7 @@
     height:fixed;
     width: fixed;
 
-      }
+}
       .step {
  text-align: left;
 }
@@ -133,7 +132,7 @@
 
                     <div id="canvas-wrap">
                     <canvas id="my_canvas" width="350" height="100"></canvas>.
-                    <div id="rocket" style="display: inline-grid; margin-top: -10px; margin-left: -19px;">
+                    <div id="rocket" style="margin-top: -20px; margin-left: 45px;">
                     <img src="img/rocket00.png" class="" alt="progress-rocket">
                     </div>
                     </div>
@@ -169,7 +168,7 @@
             ctx.clearRect(0,0,cw,ch);
             ctx.lineWidth = 10;
             ctx.fillStyle = "#FFF";
-            ctx.strokeStyle = "#09F";
+            ctx.strokeStyle = "#A9A9A9";
             ctx.textAlign = 'center';
             ctx.fillText(al+'%', cw* 0.3, ch* 0.7+2.5,cw);
             ctx.beginPath();
